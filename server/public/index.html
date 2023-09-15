@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Koalla Holla</title>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="vendors/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/styles.css">
@@ -11,15 +10,16 @@
   <body>
     <header>
     <div class="image">
-      <img src="images/icon.png" class="icon" />
-      <img class="sadKoala" src="https://camo.githubusercontent.com/aecce97c03ab9b931219b7c1f7593dab9e76a5dc756b6a72eb01230f63de46f1/68747470733a2f2f692e6d616b65616769662e636f6d2f6d656469612f382d32322d323031342f474f5f4454342e676966" alt="sadKoala">
+      <img class="page-images"src="images/icon.png" class="icon" />
+      <hr />
+      <img class="page-images" src="https://camo.githubusercontent.com/aecce97c03ab9b931219b7c1f7593dab9e76a5dc756b6a72eb01230f63de46f1/68747470733a2f2f692e6d616b65616769662e636f6d2f6d656469612f382d32322d323031342f474f5f4454342e676966" alt="sadKoala">
     </div>  
       <h1>Koala Holla</h1>
       <h3>1976 Llama Comma Drive</h2>
       <h3>Walla Walla, WA</h2>
     </header>
     <section id="addKoala">
-      <h2>Add Koala</h2>
+      <h2>Add A Koala!</h2>
       <label>Kaola Name</label><input type="text" class="input" id="nameIn" value="" placeholder="Name">
       <label>Koala Age</label><input type="text" class="input" id="ageIn" value="" placeholder="Age">
       <label>Koala Gender</label><input type="text" class="input" id="genderIn" value="" placeholder="M/F">
@@ -29,14 +29,16 @@
     </section>
     <section>
       <h2>All Koalas</h2>
-      <table>
+      <table class="table">
         <thead>
           <tr>
             <th>Name</th>
             <th>Age</th>
             <th>Gender</th>
-            <th>Ready for Transfer</th>
+            <th>Ready for Transfer?</th>
             <th>Notes</th>
+            <th>Update Transfer Status</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody id="viewKoalas">

@@ -1,39 +1,72 @@
 body {
-    background-color: rgb(8, 170, 190);
+  background-color: rgb(157, 207, 190);
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+  margin-top: -150px;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .inputFields {
-    display: flex;
-    flex-direction: column;
-    min-width: 200px;
-    width: 25%;
-    margin: 0 auto;
-    gap: 5px;
-}
-
-.button {
-    background-color: forestgreen;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  width: 25%;
+  margin: 0 auto;
+  gap: 5px;
 }
 
 .image {
-    display: flex;
-    align-items: center;
-    padding: 50px;
+  display: flex;
+  align-items: center;
+  padding: 50px;
 }
 
-img.sadKoala {
-    margin: 0 auto;
-    width: 35%;
+.page-images {
+  width: 350px;
+  height: 300px;
+}
+
+.table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(188, 214, 206);
+}
+
+th {
+  border: 1px solid black;
+}
+tr:nth-child(even) {
+  background-color: rgb(197, 199, 191);
+}
+
+.deleteButton,
+.readyButton,
+#addButton {
+  margin-top: 5px;
+  color: white;
+  padding: 4px 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: #b84e4e;
+}
+
+.readyButton {
+  background-color: rgb(145, 125, 94);
+}
+#addButton {
+  background-color: darkslategray;
 }
